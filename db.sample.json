@@ -1,0 +1,43 @@
+{
+  "channels": {
+    "test-channel": {
+      "createdAt": "1475090868076"
+    }
+  },
+  "userChannels": {
+    "silatham": ["test-channel"],
+    "squanchy": ["test-channel"]
+  },
+  "channelMessages": {
+    "test-channel": [
+      {
+        "body": "This is a sample channel message",
+        "user": "silatham",
+        "sentAt": "1475090868076"
+      },
+      {
+        "body": "This is another sample channel message",
+        "user": "squanchy",
+        "sentAt": "1475090868100"
+      }
+    ]
+  },
+  "userMessages": {
+    "silatham": [
+      {
+        "body": "This is a sample DM",
+        "sentAt": "1475090868076",
+        "sender": "silatham",
+        "recipient": "squanchy"
+      }
+    ],
+    "squanchy": [
+      {
+        "body": "This is a sample DM",
+        "sentAt": "1475090868076",
+        "sender": "silatham",
+        "recipient": "squanchy"
+      }
+    ]
+  }
+}

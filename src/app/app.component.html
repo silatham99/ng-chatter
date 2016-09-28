@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div> Are you logged in? {{AuthService.authenticated ? "Yahhh" : "Cuh..."}} </div>
+<button (click)="signIn()">Log Ya Boi</button>
+<button (click)="signOut()">Unlog Ya Boi</button>
+
+<channel-tree user="activeUser" (change)="activeChannel=$event.target.value">
+  Loading Channels...
+</channel-tree>
+
+<chat-window channel="activeChannel">
+  Loading Messages...
+</chat-window>
